@@ -24,14 +24,24 @@
 </head>
 <body>
 
-<!-- Google Analytics -->
-<script>
-  window.intercomSettings = {
-    app_id: "lxn3taix"
-  };
-</script>
-<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/lxn3taix';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
-<!-- /Google Analytics -->
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="207221979843336"
+  theme_color="#fa3c4c"
+  logged_in_greeting="Welcome to ForeverCoding. Here 24/7. Your current wait time is under 2 minutes. "
+  logged_out_greeting="Welcome to ForeverCoding. Here 24/7. Your current wait time is under 2 minutes. ">
+</div>
 
 
   <section class="menu cid-qWG4Drtj97" once="menu" id="menu2-8">
